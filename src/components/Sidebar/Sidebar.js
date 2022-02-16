@@ -11,6 +11,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Sidebar = ({ changeWidth }) => {
@@ -30,7 +31,7 @@ const Sidebar = ({ changeWidth }) => {
 
         <div className="sidebar__btn">
           <Whatshot className="sidebar__icon" />
-          <p>Trending</p>
+          <Link to='/trending'><p className="trending_text">Trending</p></Link> 
         </div>
 
         <div className="sidebar__btn">

@@ -2,6 +2,7 @@
   width: 300px;
   background-color: #202020;
   height: 91.5vh;
+  flex: 0.4;
 }
 .sidebar__btn {
   display: flex;
@@ -38,4 +39,7 @@
 
 .sidebar__extraWidth {
   width: 450px !important;
+}
+.trending_text{
+  color: white;
 }

@@ -1,0 +1,18 @@
+.trendingVideos{
+    display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 90vh;
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.trendingVideos>h2{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.trendingVideos__videos{
+    display: flex;
+    flex-wrap: wrap;
+}
