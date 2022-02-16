@@ -10,6 +10,7 @@ import {
 } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useAppContext } from "./context/appContext";
+import Trending from "./components/Trending/trending";
 
 function App() {
   const { appState, showUploadVideo, videos } = useAppContext();
@@ -40,6 +41,13 @@ function App() {
                 <Sidebar />
                 <Main />
                 {showUploadVideo && <SelectVideo />}
+              </div>
+            </Route>
+            <Route path="/trending">
+              <Header />
+              <div className="app">
+                <Sidebar changeWidth />
+                <Trending />
               </div>
             </Route>
           </div>
