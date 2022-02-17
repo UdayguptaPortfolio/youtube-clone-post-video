@@ -1,5 +1,5 @@
 import React from "react";
-import ".videoRow.css";
+import "./videoRow.css";
 import {Link} from 'react-router-dom';
 
 function VideoRow({

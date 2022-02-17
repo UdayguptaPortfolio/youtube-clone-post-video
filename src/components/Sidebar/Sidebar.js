@@ -31,7 +31,7 @@ const Sidebar = ({ changeWidth }) => {
 
         <div className="sidebar__btn">
           <Whatshot className="sidebar__icon" />
-          <Link to='/trending'><p className="trending_text">Trending</p></Link> 
+          <Link to='/trending' style={{textDecoration: 'none'}}><p className="trending_text">Trending</p></Link> 
         </div>
 
         <div className="sidebar__btn">
