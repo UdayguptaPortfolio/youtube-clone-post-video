@@ -11,6 +11,7 @@ import {
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useAppContext } from "./context/appContext";
 import Trending from "./components/Trending/trending";
+import SearchPage from './components/SearchPage/searchPage'
 
 function App() {
   const { appState, showUploadVideo, videos } = useAppContext();
@@ -50,6 +51,13 @@ function App() {
                 <Trending />
               </div>
             </Route>
+            <Route path="/search/:searchTerm">
+            <Header />
+            <div className='app'>
+              <Sidebar changeWidth/>
+              <SearchPage/>
+              </div>
+             </Route>
           </div>
         )}
 

@@ -1,3 +1,5 @@
+import React from "react";
+import { useState } from "react";
 import { Avatar, Badge, Button, makeStyles, Popover } from "@material-ui/core";
 import {
   Apps,
@@ -8,7 +10,7 @@ import {
   Search,
   VideoCall,
 } from "@material-ui/icons";
-import React from "react";
+import { Link,useHistory } from "react-router-dom";
 import logo from "../../assets/logo1.png";
 import { useAppContext } from "../../context/appContext";
 import { auth } from "../../lib/firebase";
@@ -22,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
+  const history=useHistory();
+  const [inputSearch, setInputSearch] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const classes = useStyles();
@@ -42,14 +46,21 @@ const Header = () => {
     <div className="header">
       <div className="header__left">
         <Menu className="header__menuicon" />
-        <img className="header__logo" src={logo} alt="Youtube" />
+        <Link to={'/'}><img className="header__logo" src={logo} alt="Youtube" /></Link>
       </div>
 
       <form className="header__center">
-        <input className="header__input" placeholder="Search" />
-        <Button className="header__btn">
+        <input className="header__input"
+        value={inputSearch}
+        type="text"
+        placeholder="Search"
+        onChange={(searchItem) => setInputSearch(searchItem.target.value)}
+        />
+         <Link to={`/search/${inputSearch}`}>
+         <Button className="header__btn">
           <Search className="header__searchIcon" />
         </Button>
+        </Link>
       </form>
 
       <div className="header__right">

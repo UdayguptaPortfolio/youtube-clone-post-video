@@ -1,8 +1,8 @@
 import React from "react";
-import ".searchPage.css";
+import "./searchPage.css";
 import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
-import ChannelRow from "./channelRow";
-import VideoRow from ".videoRow";
+import ChannelRow from "../SearchPage/channelRow";
+import VideoRow from "../SearchPage/videoRow";
 
 function SearchPage() {
   return (
@@ -28,7 +28,7 @@ function SearchPage() {
         timestamp="Feb 7, 2022"
         channel="Netflix India"
         title="Vikings: Valhalla | Official Trailer | Netflix India"
-        image="https://i.ytimg.com/an_webp/jH3BM2fHhtM/mqdefault_6s.webp?du=3000&sqp=CL7JkpAG&rs=AOn4CLAOBGuw8yNtUHvQJ14StsONq21EKA"
+        image="https://i.ytimg.com/an_webp/Dx9ZaqOtgP0/mqdefault_6s.webp?du=3000&sqp=CLHwt5AG&rs=AOn4CLBpLZdLq5FOmA2QvOHz9BJKJ0uJvw"
       />
 
       <VideoRow
@@ -38,7 +38,7 @@ function SearchPage() {
         timestamp="Feb 7, 2022"
         channel="Netflix India"
         title="Vikings: Valhalla | Official Trailer | Netflix India"
-        image="https://i.ytimg.com/an_webp/jH3BM2fHhtM/mqdefault_6s.webp?du=3000&sqp=CL7JkpAG&rs=AOn4CLAOBGuw8yNtUHvQJ14StsONq21EKA"
+        image="https://i.ytimg.com/an_webp/Dx9ZaqOtgP0/mqdefault_6s.webp?du=3000&sqp=CLHwt5AG&rs=AOn4CLBpLZdLq5FOmA2QvOHz9BJKJ0uJvw"
       />
 
       <VideoRow
@@ -48,7 +48,7 @@ function SearchPage() {
         timestamp="Feb 7, 2022"
         channel="Netflix India"
         title="Vikings: Valhalla | Official Trailer | Netflix India"
-        image="https://i.ytimg.com/an_webp/jH3BM2fHhtM/mqdefault_6s.webp?du=3000&sqp=CL7JkpAG&rs=AOn4CLAOBGuw8yNtUHvQJ14StsONq21EKA"
+        image="https://i.ytimg.com/an_webp/Dx9ZaqOtgP0/mqdefault_6s.webp?du=3000&sqp=CLHwt5AG&rs=AOn4CLBpLZdLq5FOmA2QvOHz9BJKJ0uJvw"
       />
 
       <VideoRow
@@ -58,7 +58,7 @@ function SearchPage() {
         timestamp="Feb 7, 2022"
         channel="Netflix India"
         title="Vikings: Valhalla | Official Trailer | Netflix India"
-        image="https://i.ytimg.com/an_webp/jH3BM2fHhtM/mqdefault_6s.webp?du=3000&sqp=CL7JkpAG&rs=AOn4CLAOBGuw8yNtUHvQJ14StsONq21EKA"
+        image="https://i.ytimg.com/an_webp/Dx9ZaqOtgP0/mqdefault_6s.webp?du=3000&sqp=CLHwt5AG&rs=AOn4CLBpLZdLq5FOmA2QvOHz9BJKJ0uJvw"
       />
 
       <VideoRow
@@ -68,7 +68,7 @@ function SearchPage() {
         timestamp="Feb 7, 2022"
         channel="Netflix India"
         title="Vikings: Valhalla | Official Trailer | Netflix India"
-        image="https://i.ytimg.com/an_webp/jH3BM2fHhtM/mqdefault_6s.webp?du=3000&sqp=CL7JkpAG&rs=AOn4CLAOBGuw8yNtUHvQJ14StsONq21EKA"
+        image="https://i.ytimg.com/an_webp/Dx9ZaqOtgP0/mqdefault_6s.webp?du=3000&sqp=CLHwt5AG&rs=AOn4CLBpLZdLq5FOmA2QvOHz9BJKJ0uJvw"
       />
     </div>
   );
