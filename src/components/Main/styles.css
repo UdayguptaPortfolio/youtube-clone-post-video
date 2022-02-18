@@ -1,10 +1,18 @@
 .main {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
   max-height: 90vh;
   width: 100%;
+  overflow-x: hidden; */
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow-y: auto;
+  max-height: 90vh;*/
+  width: 100%; 
   overflow-x: hidden;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 .videothumb__thumbnail {
   width: inherit;
@@ -39,4 +47,12 @@
 .videothumb__text {
   font-size: 14px;
   color: #aaaaaa !important;
+}
+.main>h2{
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.mainVideos__videos{
+  display: flex;
+  flex-wrap: wrap;
 }
