@@ -35,7 +35,7 @@ function Trending() {
     <div className="main">
       <h2>Trending Videos</h2>
 
-      <div className="trendingVideos__videos">
+      {/* <div className="trendingVideos__videos">
     {
   youtubeData && youtubeData.items.map((e)=>(
     <VideoCard
@@ -49,7 +49,7 @@ function Trending() {
     />
   ))
 }
-</div>
+</div> */}
       {videos.map((video) => (
         <VideoThumb video={video} />
       ))}
